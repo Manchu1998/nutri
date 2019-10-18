@@ -5,13 +5,13 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Nutri' Am</title>
-	
+
 	<link rel="icon" href="../assets/img/Logotipo.png" type="image/x-icon"/>
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
-	<?php include_once('complemento/viewLoad.php'); ?>	
+	<?php include_once('complemento/viewLoad.php'); ?>
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/azzara.min.css">
 	<link rel="stylesheet" href="../assets/css/demo.css">
@@ -19,9 +19,9 @@
 
 </head>
 <body>
-	<div class="wrapper">		
-		<div class="main-header" data-background-color="purple">		
-			<div class="logo-header">				
+	<div class="wrapper">
+		<div class="main-header" data-background-color="purple">
+			<div class="logo-header">
 				<a href="inicio.php" class="logo">
 					<img src="../assets/img/Logotipo.png" alt="navbar brand" class="navbar-brand" width="70px">
 				</a>
@@ -41,11 +41,11 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg">
-				
-				<div class="container-fluid">					
+
+				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-					
-					
+
+
 						<li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
@@ -57,7 +57,7 @@
 									<div class="user-box">
 										<div class="avatar-lg"><img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 										<div class="u-text">
-											<h4>Datos personales</h4>											
+											<h4>Datos personales</h4>
 										</div>
 									</div>
 								</li>
@@ -66,13 +66,13 @@
 									<a class="dropdown-item" href="#"><?php echo $_SESSION['cedula_usua']; ?></a>
 									<a class="dropdown-item" href="#"><?php echo $_SESSION['nombre_usua']; ?></a>
 									<a class="dropdown-item" href="#"><?php echo $_SESSION['apellido_usua']; ?></a>
-									<a class="dropdown-item" href="#"><?php echo $_SESSION['email_usua']; ?></a>						
+									<a class="dropdown-item" href="#"><?php echo $_SESSION['email_usua']; ?></a>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="../controlador/logout.php">Salir</a>
 								</li>
 							</ul>
 						</li>
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -82,7 +82,7 @@
 
 		<!-- Sidebar -->
 		<div class="sidebar">
-			
+
 			<div class="sidebar-background"></div>
 			<div class="sidebar-wrapper scrollbar-inner">
 				<div class="sidebar-content">
@@ -101,7 +101,7 @@
 						<li class="nav-item active">
 							<a href="inicio.php">
 								<i class="fas fa-home"></i>
-								<p>Principal</p>								
+								<p>Principal</p>
 							</a>
 						</li>
 						<li class="nav-section">
@@ -119,15 +119,15 @@
 							<div class="collapse" id="base">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="#">
-											<span class="sub-item">Usuarios</span>
+										<a href="datos_personales.php">
+											<span class="sub-item">Personas</span>
 										</a>
 									</li>
 									<li>
 										<a href="producto.php">
 											<span class="sub-item">Producto</span>
 										</a>
-									</li>									
+									</li>
 								</ul>
 							</div>
 						</li>
@@ -144,10 +144,10 @@
 											<span class="sub-item">Datos generales</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
-						</li>					
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
-						<h4 class="page-title">General</h4>						
+						<h4 class="page-title">General</h4>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
@@ -171,7 +171,7 @@
 								   	  <div class="col">
 								   	  	 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar producto</button>
 								   	  </div>
-								   </div>	
+								   </div>
 								</div>
 
 								<!--Modal para registrar producto-->
@@ -181,12 +181,12 @@
 								      <div class="container-fluid">
 								      	 <form action="../modelo/insertar_producto.php" method="POST" autocomplete="off">
 								      	   <div class="form-group">
-										    <label for="formGroupExampleInput"><h3>Datos del Producto</h3></label>										   
-										  </div>									
-										  <div class="form-row">										    
+										    <label for="formGroupExampleInput"><h3>Datos del Producto</h3></label>
+										  </div>
+										  <div class="form-row">
 										    <div class="form-group col-md-4">
 										      <label for="inputState">Codigo del producto</label>
-										      <input type="text" name="codigo" class="form-control" id="inputCity">										     
+										      <input type="text" name="codigo" class="form-control" id="inputCity">
 										    </div>
 
 										    <div class="form-group col-md-6">
@@ -199,20 +199,20 @@
 										      <input type="text" name="marca" class="form-control" id="inputZip">
 										    </div>
 										  </div>
-										  <div class="form-group">										    
+										  <div class="form-group">
 										    <button type="submit" class="btn btn-primary">Guardar</button>
-										  </div>						  
+										  </div>
 										</form>
 								      </div>
-								       
+
 								    </div>
 								  </div>
 								 </div>
 								<div class="card-body">
 							  <div class="table-responsive">
-								
-								<div class="col-md-12">						
-								
+
+								<div class="col-md-12">
+
 								<div class="card-body">
 									<div class="table-responsive">
 										<table id="add-row" class="display table table-striped table-hover" >
@@ -224,7 +224,7 @@
 													<th>Codigo de barra</th>
 													<th style="width: 10%">Action</th>
 												</tr>
-											</thead>											
+											</thead>
 											<tbody>
 												<?php require_once('../procesos/tabla_producto.php'); ?>
 											</tbody>
@@ -232,20 +232,20 @@
 									</div>
 								</div>
 							</div>
-						   
+
 
 				</div>
 			</div>
 		</div>
 	</div>
-</div> 
-					
-						
-										
+</div>
+
+
+
 				</div>
 			</div>
-			
-		</div>	
+
+		</div>
 	</div>
 </div>
 <!--   Core JS Files   -->

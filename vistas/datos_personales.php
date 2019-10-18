@@ -8,12 +8,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Nutri' Am</title>
+
 	<link rel="icon" href="../assets/img/Logotipo.png" type="image/x-icon"/>
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
 	<?php include_once('complemento/viewLoad.php'); ?>
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/azzara.min.css">
 	<link rel="stylesheet" href="../assets/css/demo.css">
+	<script src="../assets/js/JsBarcode.all.min.js"></script>
 
 </head>
 <body>
@@ -162,33 +164,81 @@
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Datos Personales</h4>
+									<h4 class="card-title">Datos personales</h4>
+								</div><br>
+								<div class="container">
+								   <div class="row">
+								   	  <div class="col">
+								   	  	 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar persona</button>
+								   	  </div>
+								   </div>
 								</div>
+
+								<!--Modal para registrar producto-->
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								    <div class="modal-content">
+								      <div class="container-fluid">
+								      	 <form action="../modelo/insertar_producto.php" method="POST" autocomplete="off">
+								      	   <div class="form-group">
+										    <label for="formGroupExampleInput"><h3>Datos del Producto</h3></label>
+										  </div>
+										  <div class="form-row">
+										    <div class="form-group col-md-4">
+										      <label for="inputState">Codigo del producto</label>
+										      <input type="text" name="codigo" class="form-control" id="inputCity">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Nombre del producto</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity">
+										    </div>
+
+										    <div class="form-group col-md-2">
+										      <label for="inputZip">Marca del producto</label>
+										      <input type="text" name="marca" class="form-control" id="inputZip">
+										    </div>
+										  </div>
+										  <div class="form-group">
+										    <button type="submit" class="btn btn-primary">Guardar</button>
+										  </div>
+										</form>
+								      </div>
+
+								    </div>
+								  </div>
+								 </div>
+								<div class="card-body">
+							  <div class="table-responsive">
+
+								<div class="col-md-12">
+
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="basic-datatables" class="display table table-striped table-hover" >
+										<table id="add-row" class="display table table-striped table-hover" >
 											<thead>
 												<tr>
-													<th>N*</th>
-													<th>Identidad</th>
+													<th>Codigo</th>
 													<th>Nombre</th>
-													<th>Apellido</th>
-													<th>Email</th>
-													<th>Usuario</th>
-													<th>Condiciones</th>
-													<th>Acciones</th>
+													<th>Marca</th>
+													<th>Codigo de barra</th>
+													<th style="width: 10%">Action</th>
 												</tr>
 											</thead>
-
 											<tbody>
-												<?php include_once('../modelo/seleccionar.php'); ?>
+												<?php require_once('../procesos/tabla_producto.php'); ?>
 											</tbody>
 										</table>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -198,41 +248,6 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-
-
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-</script>
-
-
-<script type="text/javascript">
-
-	FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-</script>
-
-
-
-<script type="text/javascript">
-
-{
-    status: 'connected',
-    authResponse: {
-        accessToken: '...',
-        expiresIn:'...',
-        signedRequest:'...',
-        userID:'...'
-    }
-}
-
-</script>
-
 
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
@@ -283,28 +298,5 @@ function checkLoginState() {
 <!-- Azzara DEMO methods, don't include it in your project! -->
 <script src="../assets/js/setting-demo.js"></script>
 <script src="../assets/js/demo.js"></script>
-
-
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{your-app-id}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-
-    FB.AppEvents.logPageView();
-
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 </body>
 </html>
