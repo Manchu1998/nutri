@@ -175,14 +175,62 @@
 								</div>
 
 								<!--Modal para registrar producto-->
-								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="margin-top: 30px;">
 								  <div class="modal-dialog modal-lg">
 								    <div class="modal-content">
 								      <div class="container-fluid">
-								      	 <form action="../modelo/insertar_producto.php" method="POST" autocomplete="off">
+
+
+								      	 <form  action="../modelo/insertar_producto.php" method="POST" autocomplete="off">
 								      	   <div class="form-group">
-										    <label for="formGroupExampleInput"><h3>Datos del Producto</h3></label>
+										    <label for="formGroupExampleInput"><h3><strong>Formulario de registro</strong></h3></label>
 										  </div>
+										  <label for="inputState">N-* de cedula</label>
+										  <div class="form-row">
+												<div class=" form-group col-md-4">
+													<input type="text" class="form-control input-full" id="inlineinput" placeholder="cedula">
+												</div>
+											</div>
+										  <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">Primer nombre</label>
+										      <input type="text" name="codigo" class="form-control" id="inputCity" placeholder="primer nombre">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Segundo nombre</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="segundo nombre">
+										    </div>
+										  </div>
+
+										  <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">Apellido paterno</label>
+										      <input type="text" name="codigo" class="form-control" id="inputCity" placeholder="apellido paterno">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Apellido materno</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="apellido materno">
+										    </div>
+										  </div>
+
+										  <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">Apellido paterno</label>
+										      <input type="text" name="codigo" class="form-control" id="inputCity">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Apellido materno</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity">
+										    </div>
+										  </div>
+
+
+
 										  <div class="form-row">
 										    <div class="form-group col-md-4">
 										      <label for="inputState">Codigo del producto</label>
@@ -203,6 +251,10 @@
 										    <button type="submit" class="btn btn-primary">Guardar</button>
 										  </div>
 										</form>
+
+
+
+
 								      </div>
 
 								    </div>
