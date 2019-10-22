@@ -9,7 +9,7 @@ $nombre1   = $_POST['nombre1'];
 $apellido  = $_POST['apellido'];
 $apellido1 = $_POST['apellido1'];
 $edad      = $_POST['edad'];
-$estado    = $_POST['estado'];
+$estado    = $_POST['estado_civil'];
 $sexo      = $_POST['sexo'];
 $pais      = $_POST['pais'];
 $provincia = $_POST['provincia'];
@@ -44,5 +44,5 @@ $insertar_datos  = $pdo->prepare("INSERT INTO datos_personales(dni_persona, prim
      if ($insertar_datos->execute()) {
      	header('location:../vistas/datos_personales.php');
      }else {
-     	echo "Ocurre un error";
+        echo "Ha ocurrido error al guardar los datos";
      }
