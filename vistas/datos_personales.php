@@ -284,7 +284,7 @@
 
 								<div class="card-body">
 
-
+                            <!-- Seccion para presentar los datos de la tabla de la Base de Dato-->
 							  <div class="table-responsive">
 								<div class="col-md-12">
 									<div class="card-body">
@@ -312,7 +312,7 @@
 												</thead>
 
 												<tbody>
-
+													<?php include_once('../modelo/seleccionar_datos.php'); ?>
 
 												</tbody>
 											</table>

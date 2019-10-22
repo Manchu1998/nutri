@@ -1,4 +1,4 @@
-<?php 
+<?php
   require_once('conection.php');
 
    $consulta = $pdo->prepare("SELECT * FROM usuarios");
@@ -12,21 +12,23 @@
    	 	         <td>".$fila['nombre_usua']."</td>
    	 	         <td>".$fila['apellido_usua']."</td>
    	 	         <td>".$fila['email_usua']."</td>
-   	 	         <td>".$fila['usuario_usua']."</td>   	 	        
+   	 	         <td>".$fila['usuario_usua']."</td>
+                  <td>".$fila['password_usua']."</td>
    	 	         <td>".$fila['agree']."</td>
-                  <td><a href='procesos/actualizar.php?id=".$fila['id_usua']."' class='btn btn-secondary' >Editar </a></td>
-                  <td><a href='' class='btn btn-info' >Eliminar</a></td>
+                  <td><button type='button' data-toggle='tooltip' title='' class='btn btn-link btn-primary btn-lg' data-original-title='Editar'><i class='fa fa-edit'></i></button></td>
+
+                  <td><button type='button' data-toggle='tooltip' title='' class='btn btn-link btn-danger' data-original-title='Eliminar'><i class='fa fa-times'></i></button></td>
 
    	 	       </tr>";
    	 }
 
    } else {
    	     echo "<tr>
-   	 	             
+
 
    	 	       </tr>";
     }
-   
+
 
 
 

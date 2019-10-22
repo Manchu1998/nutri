@@ -124,6 +124,7 @@
 													<th>Apellido</th>
 													<th>Email</th>
 													<th>Usuario</th>
+													<th>Password</th>
 													<th>Condiciones</th>
 													<th>Acciones</th>
 												</tr>
