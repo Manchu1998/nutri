@@ -109,7 +109,33 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-						<!-- Aqui el cuerpo-->
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Datos Personales</h4>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="basic-datatables" class="display table table-striped table-hover" >
+											<thead>
+												<tr>
+													<th>N*</th>
+													<th>Identidad</th>
+													<th>Nombre</th>
+													<th>Apellido</th>
+													<th>Email</th>
+													<th>Usuario</th>
+													<th>Condiciones</th>
+													<th>Acciones</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<?php include_once('../modelo/seleccionar.php'); ?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 

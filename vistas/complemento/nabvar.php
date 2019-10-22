@@ -29,6 +29,13 @@
 											<span class="sub-item">Producto</span>
 										</a>
 									</li>
+
+									<li>
+										<a href="usuarios.php">
+											<span class="sub-item">Usuarios</span>
+										</a>
+									</li>
+
 								</ul>
 							</div>
 						</li>
