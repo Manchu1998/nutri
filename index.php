@@ -7,15 +7,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Dain</title>	
-	<link rel="icon" href="assets/img/Logotipo.png" type="image/x-icon"/>	
+	<title>Dain</title>
+	<link rel="icon" href="assets/img/Logotipo.png" type="image/x-icon"/>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/azzara.min.css">
+	<script src="controlador/aditional/controlador_login.js"></script>
 </head>
 
 <body class="login">
 	<div class="wrapper wrapper-login">
-		<form action="controlador/login.php" method="POST" autocomplete="off"> 
+		<form action="controlador/login.php" method="POST" autocomplete="off" name="login">
 			<div class="container container-login animated fadeIn">
 				<h3 class="text-center">Nutri'Am</h3>
 				<div class="login-form">
@@ -23,14 +24,13 @@
 					<div class="form-group form-floating-label">
 						<input id="username" name="usuario" type="text" class="form-control input-border-bottom" required>
 						<label for="usuario" class="placeholder">Usuario</label>
+						<span id="usuario"></span>
 					</div>
 
 					<div class="form-group form-floating-label">
 						<input id="password" name="password" type="password" class="form-control input-border-bottom" required>
 						<label for="password" class="placeholder">Password</label>
-						<div class="show-password">
-							<i class="flaticon-interface"></i>
-						</div>
+						<span id="password"></span>
 					</div>
 
 					<div class="row form-sub m-0">
@@ -38,11 +38,11 @@
 							<input type="checkbox" class="custom-control-input" id="rememberme">
 							<label class="custom-control-label" for="rememberme">Notifiqueme</label>
 						</div>
-						
+
 						<a href="#" class="link float-right">Recuperar password?</a>
 					</div>
 					<div class="form-action mb-3">
-						<input type="submit" class="btn btn-primary btn-rounded btn-login" value="Acceder">
+						<input type="submit" id="acceder" class="btn btn-primary btn-rounded btn-login" value="Acceder">
 					</div>
 					<div class="login-account">
 						<span class="msg">Aun no  tienes cuenta?</span>
@@ -94,7 +94,7 @@
 							<i class="flaticon-interface"></i>
 						</div>
 					</div>
-					
+
 					<div class="row form-sub m-0">
 						<div class="custom-control custom-checkbox">
 							<input type="checkbox" class="custom-control-input" name="agree" id="agree">

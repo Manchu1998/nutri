@@ -1,9 +1,9 @@
-<?php 
+<?php
   include_once('seguridad.php');
 
  if (isset($_POST['usuario']) && isset($_POST['password'])) {
  	include_once('../modelo/conection.php');
- 	   
+
 
  	   $usuario = $_POST['usuario'];
  	   $password =md5($_POST['password']);
@@ -18,12 +18,12 @@
 
  	      	session_start();
 
- 	      	$fila = $consulta->fetch();              
+ 	      	$fila = $consulta->fetch();
               $_SESSION['cedula_usua'] = $fila['cedula_usua'];
  	      	  $_SESSION['nombre_usua'] = $fila['nombre_usua'];
  	      	  $_SESSION['apellido_usua'] = $fila['apellido_usua'];
- 	      	  $_SESSION['email_usua'] = $fila['email_usua'];	      	 
- 	      	  
+ 	      	  $_SESSION['email_usua'] = $fila['email_usua'];
+
 
  	      	  header('location:../vistas/inicio.php');
 
@@ -32,11 +32,11 @@
  	      	echo "Los Datos no son correctos";
  	      	header('location:../index.php');
  	      }
- 	      
+
  } else {
  	# code...
  }
- 
+
 
 
  ?>

@@ -183,70 +183,140 @@
 								      <div class="container-fluid">
 
 
-								      	 <form  action="../modelo/insertar_producto.php" method="POST" autocomplete="off">
+								      	 <form  action="../modelo/inserta_datos.php" method="POST" autocomplete="off">
 								      	   <div class="form-group">
 										    <label for="formGroupExampleInput"><h3><strong>Formulario de registro</strong></h3></label>
 										  </div>
 										  <label for="inputState">N-* de cedula</label>
 										  <div class="form-row">
 												<div class=" form-group col-md-4">
-													<input type="text" class="form-control input-full" id="inlineinput" placeholder="cedula">
+													<input type="text" class="form-control input-full" id="inlineinput" placeholder="cedula" name="dni">
 												</div>
 											</div>
 										  <div class="form-row">
 										    <div class="form-group col-md-6">
-										      <label for="inputState">Primer nombre</label>
-										      <input type="text" name="codigo" class="form-control" id="inputCity" placeholder="primer nombre">
+										      <label for="inputState">* Primer nombre</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="primer nombre" name="nombre">
 										    </div>
 
 										    <div class="form-group col-md-6">
-										      <label for="inputCity">Segundo nombre</label>
-										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="segundo nombre">
+										      <label for="inputCity">* Segundo nombre</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="segundo nombre" name="nombre1">
 										    </div>
 										  </div>
 
 										  <div class="form-row">
 										    <div class="form-group col-md-6">
-										      <label for="inputState">Apellido paterno</label>
-										      <input type="text" name="codigo" class="form-control" id="inputCity" placeholder="apellido paterno">
+										      <label for="inputState">* Apellido paterno</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="apellido paterno" name="apellido">
 										    </div>
 
 										    <div class="form-group col-md-6">
-										      <label for="inputCity">Apellido materno</label>
-										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="apellido materno">
+										      <label for="inputCity">* Apellido materno</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="apellido materno" name="apellido1">
 										    </div>
 										  </div>
 
 										  <div class="form-row">
 										    <div class="form-group col-md-6">
-										      <label for="inputState">Apellido paterno</label>
-										      <input type="text" name="codigo" class="form-control" id="inputCity">
+										      <label for="inputState">* Edad</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="Edad de la persona" name="edad">
 										    </div>
 
 										    <div class="form-group col-md-6">
-										      <label for="inputCity">Apellido materno</label>
-										      <input type="text" name="nombre" class="form-control" id="inputCity">
-										    </div>
-										  </div>
-
-
-
-										  <div class="form-row">
-										    <div class="form-group col-md-4">
-										      <label for="inputState">Codigo del producto</label>
-										      <input type="text" name="codigo" class="form-control" id="inputCity">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">Nombre del producto</label>
-										      <input type="text" name="nombre" class="form-control" id="inputCity">
+										      <label for="inputCity">* Estado civil</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="Estado civil" name="estado_civil">
 										    </div>
 
 										    <div class="form-group col-md-2">
-										      <label for="inputZip">Marca del producto</label>
-										      <input type="text" name="marca" class="form-control" id="inputZip">
+										      <label for="inputZip">* Sexo</label>
+										      <select type="text" name="sexo" class="form-control" id="inputCity">
+										      	<option name="Masculino">Masculino</option>
+										      	<option name="Femenino">Femenino</option>
+										      	<option name="Otro">Otro</option>
+										      </select>
 										    </div>
 										  </div>
+
+										   <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">* Pais</label>
+										       <select type="text" name="pais" class="form-control" id="inputCity">
+										      	  <option value="Ecuador">Ecuador</option>
+													<option value="Colombia">Colombia</option>
+													<option value="Venezuela">Venezuela</option>
+													<option value="Perú">Perú</option>
+													<option value="Brazil">Brazil</option>
+													<option value="Chile">Chile</option>
+													<option value="Bolivia">Bolivia</option>
+													<option value="Paraguay">Paraguay</option>
+													<option value="Uruguay">Uruguay</option>
+													<option value="Estados Unidos">Estados Unidos</option>
+										      </select>
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Provincia</label>
+										      <select type="text" name="provincia" class="form-control" id="inputCity">
+										      	<option name="a">Azuay</option>
+										      	<option name="b">Bolívar</option>
+										      	<option name="g">Cañar</option>
+										      	<option name="g">Carchi</option>
+										      	<option name="g">Chimborazo</option>
+										      	<option name="g">Cotopaxi</option>
+										      	<option name="g">El Oro</option>
+										      	<option name="g">Esmeraldas</option>
+										      	<option name="g">Galápagos,</option>
+										      	<option name="g">Guayas</option>
+										      	<option name="g">Imbabura</option>
+										      	<option name="g">Loja</option>
+										      	<option name="g">Los Ríos</option>
+										      	<option name="g">Manabí</option>
+										      	<option name="g">Morona Santiago</option>
+										      	<option name="g">Napo</option>
+										      	<option name="g">Orellana</option>
+										      	<option name="g">Pastaza</option>
+										      	<option name="g">Pichincha</option>
+										      	<option name="g">Santa Elena</option>
+										      </select>
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Ciudad</label>
+										      <input type="text" name="ciudad" class="form-control" id="inputCity" placeholder="ciudad">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Ocupacion actual</label>
+										      <select type="text" name="ocupacion" class="form-control" id="inputCity">
+										      	<option name="g">Trabajo activo</option>
+										      	<option name="g">Jubilado</option>
+										      	<option name="g">En proceso</option>
+										      </select>
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Direccion</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="Direccion" name="direccion">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Email</label>
+										      <input type="email" name="email" class="form-control" id="inputCity" placeholder="email" name="email">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Telefono</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="telefono" name="telefono">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">* Celular</label>
+										      <input type="text" name="nombre" class="form-control" id="inputCity" placeholder="celular" name="celular">
+										    </div>
+										  </div>
+
+
 										  <div class="form-group">
 										    <button type="submit" class="btn btn-primary">Guardar</button>
 										  </div>
