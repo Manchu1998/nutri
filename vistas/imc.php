@@ -16,7 +16,9 @@
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/azzara.min.css">
 	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/calculadora.css">
 	<script src="../assets/js/JsBarcode.all.min.js"></script>
+
 
 </head>
 <body>
@@ -135,12 +137,12 @@
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Datos personales</h4>
+									<h4 class="card-title">Indice de Masa Corporal</h4>
 								</div><br>
 								<div class="container">
 								   <div class="row">
 								   	  <div class="col">
-								   	  	 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar persona</button>
+								   	  	 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar indice</button>
 								   	  </div>
 								   </div>
 								</div>
@@ -154,60 +156,48 @@
 								      <div class="container-fluid">
 
 
-								      	 <form  action="../modelo/inserta_datos.php" method="POST" autocomplete="off">
+								      	 <form  action="#" method="POST" autocomplete="off">
 								      	   <div class="form-group">
-										    <label for="formGroupExampleInput"><h3><strong>Formulario de registro</strong></h3></label>
-										  </div>
-										  <label for="inputState">N-* de cedula</label>
-										  <div class="form-row">
-												<div class=" form-group col-md-4">
-													<input type="text" class="form-control input-full" id="inlineinput" placeholder="cedula" name="dni">
-												</div>
-											</div>
-										  <div class="form-row">
-										    <div class="form-group col-md-6">
-										      <label for="inputState">* Primer nombre</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="primer nombre" name="nombre">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Segundo nombre</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="segundo nombre" name="nombre1">
-										    </div>
+										    <label for="formGroupExampleInput"><h3><strong>Formulario de Indice de Masa Corporal</strong></h3></label>
 										  </div>
 
 										  <div class="form-row">
 										    <div class="form-group col-md-6">
-										      <label for="inputState">* Apellido paterno</label>
+										      <label for="inputState">Nombre</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="Nombre" name="nombre">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Apellido</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="Apellido" name="apellido" disabled>
+										    </div>
+										  </div>
+
+
+										  <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">Fecha</label>
+										      <input type="date" class="form-control" id="inputCity" name="fecha">
+										    </div>
+
+										    <div class="form-group col-md-6">
+										      <label for="inputCity">Peso</label>
+										      <input type="text" class="form-control" id="inputCity" placeholder="Peso en Kg" name="peso">
+										    </div>
+										  </div>
+
+										  <div class="form-row">
+										    <div class="form-group col-md-6">
+										      <label for="inputState">IMC de la persona</label>
 										      <input type="text" class="form-control" id="inputCity" placeholder="apellido paterno" name="apellido">
 										    </div>
 
 										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Apellido materno</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="apellido materno" name="apellido1">
+										    	 <label for="inputState">.</label><br>
+										      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Calcular</button>
 										    </div>
 										  </div>
 
-										  <div class="form-row">
-										    <div class="form-group col-md-6">
-										      <label for="inputState">* Edad</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="Edad de la persona" name="edad">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Estado civil</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="Estado civil" name="estado_civil">
-										    </div>
-
-										    <div class="form-group col-md-2">
-										      <label for="inputZip">* Sexo</label>
-										      <select type="text" name="sexo" class="form-control" id="inputCity">
-										      	<option name="Masculino">Masculino</option>
-										      	<option name="Femenino">Femenino</option>
-										      	<option name="Otro">Otro</option>
-										      </select>
-										    </div>
-										  </div>
 
 										   <div class="form-row">
 										    <div class="form-group col-md-6">
@@ -224,67 +214,6 @@
 													<option value="Uruguay">Uruguay</option>
 													<option value="Estados Unidos">Estados Unidos</option>
 										      </select>
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Provincia</label>
-										      <select type="text" name="provincia" class="form-control" id="inputCity">
-										      	<option name="Azuay">Azuay</option>
-										      	<option name="Bolívar">Bolívar</option>
-										      	<option name="Cañar">Cañar</option>
-										      	<option name="Carchi">Carchi</option>
-										      	<option name="Chimborazo">Chimborazo</option>
-										      	<option name="Cotopaxi">Cotopaxi</option>
-										      	<option name="El Oro">El Oro</option>
-										      	<option name="Esmeraldas">Esmeraldas</option>
-										      	<option name="Galápagos">Galápagos,</option>
-										      	<option name="Guayas">Guayas</option>
-										      	<option name="Imbabura">Imbabura</option>
-										      	<option name="Loja">Loja</option>
-										      	<option name="Los Ríos">Los Ríos</option>
-										      	<option name="Manabí">Manabí</option>
-										      	<option name="Morona Santiago">Morona Santiago</option>
-										      	<option name="Napo">Napo</option>
-										      	<option name="Orellana">Orellana</option>
-										      	<option name="Pastaza">Pastaza</option>
-										      	<option name="Pichincha">Pichincha</option>
-										      	<option name="Santa Elena">Santa Elena</option>
-										      	<option name="Sto. Domingo de los Tsachilas">Sto Domingo de los Tsachilas</option>
-										      </select>
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Ciudad</label>
-										      <input type="text" name="ciudad" class="form-control" id="inputCity" placeholder="ciudad">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Ocupacion actual</label>
-										      <select type="text" name="ocupacion" class="form-control" id="inputCity">
-										      	<option name="g">Trabajo activo</option>
-										      	<option name="g">Jubilado</option>
-										      	<option name="g">En proceso</option>
-										      </select>
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Direccion</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="Direccion" name="direccion">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Email</label>
-										      <input type="email" name="email" class="form-control" id="inputCity" placeholder="email" name="email">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Telefono</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="telefono" name="telefono">
-										    </div>
-
-										    <div class="form-group col-md-6">
-										      <label for="inputCity">* Celular</label>
-										      <input type="text" class="form-control" id="inputCity" placeholder="celular" name="celular">
 										    </div>
 										  </div>
 
@@ -323,19 +252,11 @@
 														<th>Estado civil</th>
 														<th>Genero</th>
 														<th>Pais</th>
-														<th>Provincia</th>
-														<th>Ciudad</th>
-														<th>Ocupacion</th>
-														<th>Direccion</th>
-														<th>Email</th>
-														<th>Telefono</th>
-														<th>Celular</th>
-														<th>Acciones</th>
 													</tr>
 												</thead>
 
 												<tbody>
-													<?php include_once('../modelo/seleccionar_datos.php'); ?>
+
 
 												</tbody>
 											</table>
@@ -352,6 +273,35 @@
 	   </div>
 	</div>
 </div>
+
+
+	<!--Modal para hacer los calculos-->
+	<div class="modal fade" style="background: #bdc3c7;background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); background: linear-gradient(to right, #2c3e50, #bdc3c7);"  id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Calculadora de <strong>Masa Corporal</strong></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+              <div class="calculadora">
+					<div class="pantalla">
+						<div id="resultado">23245</div>
+					</div>
+
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary">Aceptar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
 
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.3.2.1.min.js"></script>

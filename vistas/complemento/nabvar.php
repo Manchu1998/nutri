@@ -20,11 +20,6 @@
 							<div class="collapse" id="base">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="datos_personales.php">
-											<span class="sub-item">Personas</span>
-										</a>
-									</li>
-									<li>
 										<a href="producto.php">
 											<span class="sub-item">Producto</span>
 										</a>
@@ -48,12 +43,36 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="#">
-											<span class="sub-item">Datos generales</span>
+										<a href="datos_personales.php">
+											<span class="sub-item">Personas</span>
+										</a>
+									</li>
+									<li>
+										<a href="imc.php">
+											<span class="sub-item">IMC</span>
 										</a>
 									</li>
 
 								</ul>
 							</div>
 						</li>
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#tables">
+								<i class="fas fa-table"></i>
+								<p>Reporte</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="tables">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../tables/tables.html">
+											<span class="sub-item">Realizar reporte</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+
 					</ul>
