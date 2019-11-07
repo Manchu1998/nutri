@@ -6,7 +6,8 @@ require_once('conection.php');
 $cedula    = $_POST['dni'];
 $nombre    = $_POST['nombre'];
 $nombre1   = $_POST['nombre1'];
-$apellido  = $_POST['apellido'];
+$apellido  = $_POST['apell
+ido'];
 $apellido1 = $_POST['apellido1'];
 $edad      = $_POST['edad'];
 $estado    = $_POST['estado_civil'];
