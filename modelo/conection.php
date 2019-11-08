@@ -1,19 +1,30 @@
 <?php
 
-  $conexion = 'mysql:host=localhost; dbname=nutri';
-  $user     = 'root';
-  $password =  '@ignacio1998';
+ //Realizando la conexion a la base de Datos.
 
-  try {
+   function consultarSQL($query){
+	     $mysqli = new mysqli("localhost", "root", "@ignacio1998", "nutri");
+	     if (mysqli_connect_errno()) {
+	        echo "El sistema tiene errore al conectarse";
+	     }
 
-  	 $pdo = new PDO($conexion, $user, $password);
-  	  //echo 'Conectado';
+	     $mysqli->set_charset("uft8");
+	     $mysqli->autocommit(FALSE);
+	     $mysqli->begin_transaction(MYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT);
 
-  } catch (PDOException $e) {
-  	echo "Error al conectar". $e->getMessage() . "<br>";
+	     if ($consulta=$mysqli->query($query)) {
+	     	if ($mysqli->commit()) {
+	     		//echo "Datos guardados";
+	     	}else {
+	     		echo "Datos no guardados";
+	     	}
 
-  }
+	     }else {
+	     	$mysqli->rollback();
+	     	//echo "Error al guardar los datos";
+	     }
 
+	     return $consulta;
+   }
 
-
-
+?>

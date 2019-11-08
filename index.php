@@ -64,7 +64,7 @@
 		</form>
 
 
-		<form id="registrar" method="POST" autocomplete="off" style="margin-top: 60px;">
+		<form  action="modelo/registrar.php" id="registrar" method="POST" autocomplete="off" style="margin-top: 60px;">
 			<div class="container container-signup animated fadeIn">
 				<h3 class="text-center">Crear cuenta</h3>
 				<div class="login-form">
@@ -111,7 +111,7 @@
 					</div>
 					<div class="form-action">
 						<a href="#" id="show-signin" class="btn btn-danger btn-rounded btn-login mr-3">Cancel</a>
-						<input type="button" class="btn btn-primary btn-rounded btn-login" id="enviar" value="Enviar datos">
+						<input type="submit" class="btn btn-primary btn-rounded btn-login" id="enviar" value="Enviar datos">
 					</div>
 				</div>
 			</div>
