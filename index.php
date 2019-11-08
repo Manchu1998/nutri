@@ -29,7 +29,7 @@
 	<div class="wrapper wrapper-login">
 		<form action="controlador/login.php" method="POST" autocomplete="off" name="login">
 			<div class="container container-login animated fadeIn">
-				<h3 class="text-center">Iniciar sesion</h3>
+				<h3 class="text-center">Iniciar sesión</h3>
 				<div class="login-form">
 
 					<div class="form-group form-floating-label">
@@ -40,7 +40,7 @@
 
 					<div class="form-group form-floating-label">
 						<input id="password" name="password" type="password" class="form-control input-border-bottom" required>
-						<label for="password" class="placeholder">Password</label>
+						<label for="password" class="placeholder">Contraseña</label>
 						<span id="password"></span>
 					</div>
 
@@ -50,14 +50,14 @@
 							<label class="custom-control-label" for="rememberme">Notifiqueme</label>
 						</div>
 
-						<a href="#" class="link float-right">Recuperar password?</a>
+						<a href="vistas/recueperar-contrasena.php" class="link float-right">Recuperar contraseña?</a>
 					</div>
 					<div class="form-action mb-3">
 						<input type="submit" id="acceder" class="btn btn-primary btn-rounded btn-login" value="Acceder">
 					</div>
 					<div class="login-account">
-						<span class="msg">Aun no  tienes cuenta?</span>
-						<a href="#" id="show-signup" class="link">Regisitrese</a>
+						<span class="msg">Aún no  tienes cuenta?</span>
+						<a href="#" id="show-signup" class="link">Regístrese</a>
 					</div>
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 
 					<div class="form-group form-floating-label">
 						<input  id="password" name="password" type="password" class="form-control input-border-bottom" required>
-						<label for="passwordsignin" class="placeholder">Password</label>
+						<label for="passwordsignin" class="placeholder">Contraseña</label>
 					</div>
 
 					<div class="row form-sub m-0">
