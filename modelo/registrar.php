@@ -15,9 +15,10 @@
 
       if (consultarSQL($usuarios)) {
          echo "Datos gurdados";
-         header("lication:../index.php")
+         header("location:../index.php");
       } else {
          echo "Error al insertar";
+         echo "Estas loco";
       }
 
 ?>

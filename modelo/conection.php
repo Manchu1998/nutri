@@ -2,11 +2,9 @@
 
  //Realizando la conexion a la base de Datos.
 
-   function consultarSQL($query){
-	     $mysqli = new mysqli("localhost", "root", "@ignacio1998", "nutri");
-	     if (mysqli_connect_errno()) {
-	        echo "El sistema tiene errore al conectarse";
-	     }
+   function consultarSQL($query){ $mysqli = new mysqli("localhost", "root",
+"@ignacio1998", "nutri"); if (mysqli_connect_errno()) { echo "El sistema tiene
+errore al conectarse"; }
 
 	     $mysqli->set_charset("uft8");
 	     $mysqli->autocommit(FALSE);

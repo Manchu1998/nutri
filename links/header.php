@@ -7,6 +7,5 @@
 <link rel="stylesheet" href="../assets/css/azzara.min.css">
 <link rel="stylesheet" href="../assets/css/demo.css">
 <link rel="stylesheet" href="../assets/css/calculadora.css">
-<?php include_once('../vistas/includes/menu.php'); ?>
 <script src="../assets/js/JsBarcode.all.min.js"></script>
 <script src="../assets/js/plugin/webfont/webfont.min.js"></script>

@@ -22,7 +22,7 @@
         	  header('location:../vistas/inicio.php');
 
         }else {
-        	header('location:');
+        	header('location:../index.php');
         }
 
 

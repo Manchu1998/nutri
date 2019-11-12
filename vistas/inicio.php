@@ -5,6 +5,15 @@
 <html lang="es">
 <head>
 	<?php include_once('../links/header.php'); ?>
+	<script>
+	WebFont.load({
+		google: {"families":["Open+Sans:300,400,600,700"]},
+		custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['../assets/css/fonts.css']},
+		active: function() {
+			sessionStorage.fonts = true;
+		}
+	});
+</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -85,7 +94,7 @@
 							<div class="clearfix"></div>
 						</div>
 					</div>
-					 <?php include_once ('complemento/nabvar.php'); ?>
+					 <?php include_once ('includes/nabvar.php'); ?>
 				</div>
 			</div>
 		</div>
@@ -105,41 +114,20 @@
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="basic-datatables" class="display table table-striped table-hover" >
-											<thead>
-												<tr>
-													<th>N*</th>
-													<th>Identidad</th>
-													<th>Nombre</th>
-													<th>Apellido</th>
-													<th>Email</th>
-													<th>Usuario</th>
-													<th>Password</th>
-													<th>Condiciones</th>
-													<th>Acciones</th>
-												</tr>
-											</thead>
-
-											<tbody>
-												<?php include_once('../modelo/seleccionar.php'); ?>
-											</tbody>
-										</table>
+                                        //Especio en blanco
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
 
   <?php  include_once('../links/footer.php'); ?>
+
 
 </body>
 </html>
