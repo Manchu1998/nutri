@@ -1,6 +1,7 @@
 <?php
 
   require_once ('conection.php');
+  require_once ('../modal/producto.php');
 
 
   $consulta = "SELECT  * FROM producto";
@@ -14,9 +15,9 @@
             <td>".$fila['nombre_prod']."</td>
             <td>".$fila['descrip_prod']."</td>
 
-            <td><button type='button' data-toggle='modal' data-target='#modal' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
+            <td><button type='button' data-toggle='modal' data-target='#Editarmodal' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
                     </button></td>
-            <td><button type='button' data-toggle='modal' data-target='#modal' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
+            <td><button type='button' data-toggle='modal' data-target='#Eliminarproducto' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
                     </button></td>
           </tr>";
     }
