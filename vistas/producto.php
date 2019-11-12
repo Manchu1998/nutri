@@ -104,19 +104,40 @@
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
-						<h4 class="page-title">Seccion de productos</h4>
+						<h4 class="page-title">Sección de productos</h4>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Nuevo producto</button>
+									 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example">Nuevo producto</button>
 								</div>
+										   <div class="card-body">
+									<div class="table-responsive">
+										<table id="basic-datatables" class="display table table-striped table-hover" >
+											<thead>
+												<tr>
+													<th>N*</th>
+													<th>Código de barra</th>
+													<th>Nombre</th>
+													<th>Descripción</th>
+													<th>Acciones</th>
+												</tr>
+											</thead>
+
+											<tbody>
+		                                      <?php include_once('../modelo/consulta_producto.php'); ?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
 								<div class="card-body">
                                    <?php include_once('../modal/producto.php'); ?>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

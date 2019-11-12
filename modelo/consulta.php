@@ -1,20 +1,26 @@
 <?php
 
   require_once ('conection.php');
+  require_once ('../procesos/consulta_usuario.php');
+
 
   $consulta = "SELECT  * FROM usuarios";
+  //Lamamos la function de la bd.
   $datos = consultarSQL($consulta);
 
-    while ($row=mysqli_fetch_array($datos)) {
-    	echo '<tr><td>'.$row["cedula_usua"].'</td>';
-    	echo '<td>'.$row["nombre_usua"].'</td>';
-    	echo '<td>'.$row["apellido_usua"].'</td>';
-    	echo '<td>'.$row["email_usua"].'</td>';
-    	echo '<td>'.$row["carrera_usua"].'</td>';
-    	echo '<td>'.$row["usuario_usua"].'</td>';
-    	echo '<td>'.$row["password_usua"].'</td>';
-    	echo '<td>'.$row["agree"].'</td></tr>';
+  while ($fila=$datos->fetch_array(MYSQLI_ASSOC)) {
+    echo "<tr>
+            <td>".$fila['id_usua']."</td>
+            <td>".$fila['nombre_usua']."</td>
+            <td>".$fila['apellido_usua']."</td>
+            <td>".$fila['email_usua']."</td>
+            <td>".$fila['carrera_usua']."</td>
+            <td>".$fila['usuario_usua']."</td>
+            <td>".$fila['password_usua']."</td>
+            <td>".$fila['agree']."</td>
+            <td><button type='button' data-toggle='modal' data-target='#modal' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
+                    </button></td>
+          </tr>";
     }
-
-
 ?>
+
