@@ -5,7 +5,7 @@
     <div class="modal-content">
        <div class="modal-content">
 	      <div class="container">
-	      	<form action="../modelo/registrar_producto.php" method="POST" autocomplete="off">
+	      	<form action="../modelo/datos_personales.php" method="POST" autocomplete="off">
 	      		 <div class="wizard-container wizard-round col-md-12">
 					<div class="wizard-header text-center"><br>
 						<h3 class="wizard-title"><b>Datos</b>  Personales</h3>
@@ -15,20 +15,20 @@
 							<div class="col-md-4" data-select2-id="8">
 								<div class="form-group" data-select2-id="7">
 									<label>DNI</label>
-									<input name="codigo_producto" type="text" class="form-control" required>
+									<input name="dni" type="text" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Primer nombre</label>
-									<input name="nombre_producto" type="text" class="form-control" required>
+									<input name="primer_nombre" type="text" class="form-control" required>
 								</div>
 
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Segundo nombre</label>
-									<input name="descripcion" type="text" class="form-control" required>
+									<input name="segundo_nombre" type="text" class="form-control" required>
 								</div>
 
 							</div>
@@ -37,20 +37,20 @@
 							<div class="col-md-4" data-select2-id="8">
 								<div class="form-group" data-select2-id="7">
 									<label>Apellido paterno</label>
-									<input name="codigo_producto" type="text" class="form-control" required>
+									<input name="apellido_paterno" type="text" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Apellido materno</label>
-									<input name="nombre_producto" type="text" class="form-control" required>
+									<input name="apellido_materno" type="text" class="form-control" required>
 								</div>
 
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Edad</label>
-									<input name="descripcion" type="text" class="form-control" required>
+									<input name="edad" type="text" class="form-control" required>
 								</div>
 
 							</div>
@@ -59,7 +59,7 @@
 							<div class="col-md-4">
 								<div class="form-group">
 								  <label for="defaultSelect">Estado Civil</label>
-									<select class="form-control form-control" id="defaultSelect">
+									<select class="form-control form-control" id="defaultSelect" name="estado_civil">
 										<option>Seleccione</option>
 										<option value="Soltero/a">Soltero/a</option>
 										<option value="Casado/a">Casado/a</option>
@@ -73,11 +73,11 @@
 							<div class="col-md-4">
 								<div class="form-group">
 								  <label for="defaultSelect">Sexo</label>
-									<select class="form-control form-control" id="defaultSelect">
-										<option>Seleccione</option>
-										<option>Masculino</option>
-										<option>Femenino</option>
-										<option>Otro</option>
+									<select class="form-control form-control" id="defaultSelect" name="sexo">
+										<option >Seleccione</option>
+										<option value="Masculino">Masculino</option>
+										<option value="Femenino">Femenino</option>
+										<option value="Otro">Otro</option>
 
 									</select>
 								</div>
@@ -86,7 +86,7 @@
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Pais</label>
-									<input name="descripcion" type="text" class="form-control" required>
+									<input name="pais" type="text" class="form-control" required>
 								</div>
 
 							</div>
@@ -95,15 +95,14 @@
 							<div class="col-md-4" data-select2-id="8">
 								<div class="form-group" data-select2-id="7">
 									<label>Ciudad</label>
-									<input name="codigo_producto" type="text" class="form-control" required>
+									<input name="ciudad" type="text" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
 									<label>Celular</label>
-									<input name="nombre_producto" type="text" class="form-control" required>
+									<input name="celular" type="text" class="form-control" required>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -126,8 +125,10 @@
   </div>
 </div>
 
-<!-- Editar producto -->
 
+
+
+<!-- Editar producto -->
 <div class="modal fade bd-example" id="Editarmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
