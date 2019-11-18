@@ -1,6 +1,5 @@
 <?php  include('../controlador/seguridad.php'); ?>
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,6 +13,7 @@
 		}
 	});
 </script>
+
 </head>
 <body>
 	<div class="wrapper">
@@ -69,7 +69,6 @@
 								</li>
 							</ul>
 						</li>
-
 					</ul>
 				</div>
 			</nav>
@@ -104,48 +103,54 @@
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
-						<h4 class="page-title">Sección de productos</h4>
+						<h4 class="page-title">Datos personales</h4>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-imc">Nuevo producto</button>
+								   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-datos">Agregar Datos Personales</button>
 								</div>
-										   <div class="card-body">
+								<div class="card-body">
 									<div class="table-responsive">
 										<table id="basic-datatables" class="display table table-striped table-hover" >
 											<thead>
 												<tr>
 													<th>N*</th>
-													<th>Código de barra</th>
+													<th>Identidad</th>
 													<th>Nombre</th>
-													<th>Descripción</th>
+													<th>Apellido</th>
+													<th>Email</th>
+													<th>Usuario</th>
+													<th>Password</th>
+													<th>Condiciones</th>
 													<th>Acciones</th>
 												</tr>
 											</thead>
 
 											<tbody>
-		                                      <?php include_once('../modelo/consulta_producto.php'); ?>
+                                                <?php include_once('../modelo/consulta.php'); ?>
 											</tbody>
 										</table>
 									</div>
 								</div>
-
 								<div class="card-body">
-                                   <?php include_once('../modal/producto.php'); ?>
+                                   <?php include_once('../modal/datos_personales.php'); ?>
 								</div>
 							</div>
 						</div>
-
 					</div>
+
+
+
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
 
-  <?php  include_once('../links/footer.php'); ?>
+<?php include_once('../links/footer.php'); ?>
 
 
 </body>
