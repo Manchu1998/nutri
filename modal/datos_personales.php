@@ -129,40 +129,113 @@
 
 
 <!-- Editar producto -->
-<div class="modal fade bd-example" id="Editarmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-datos-editar" id="EditarDatos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
        <div class="modal-content">
 	      <div class="container">
-	      	<form action="../modelo/registrar_producto.php" method="POST" autocomplete="off">
+	      	<form action="../modelo/datos_personales.php" method="POST" autocomplete="off">
 	      		 <div class="wizard-container wizard-round col-md-12">
 					<div class="wizard-header text-center"><br>
-						<h3 class="wizard-title"><b>Editar</b>  producto</h3>
+						<h3 class="wizard-title"><b>Editar </b> Datos  Personales</h3>
 					</div>
 					<div class="card-body" data-select2-id="10">
 						<div class="row" data-select2-id="9">
 							<div class="col-md-4" data-select2-id="8">
 								<div class="form-group" data-select2-id="7">
-									<label>Código de producto</label>
-									<input name="codigo_producto" type="text" class="form-control" required>
+									<label>DNI</label>
+									<input name="dni" type="text" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
-									<label>Nombre de producto</label>
-									<input name="nombre_producto" type="text" class="form-control" required>
+									<label>Primer nombre</label>
+									<input name="primer_nombre" type="text" class="form-control" required>
 								</div>
 
 							</div>
 							<div class="col-md-4">
 								<div class="form-group" data-select2-id="7">
-									<label>Descripción de producto</label>
-									<input name="descripcion" type="text" class="form-control" required>
+									<label>Segundo nombre</label>
+									<input name="segundo_nombre" type="text" class="form-control" required>
 								</div>
 
 							</div>
 						</div>
+						<div class="row" data-select2-id="9">
+							<div class="col-md-4" data-select2-id="8">
+								<div class="form-group" data-select2-id="7">
+									<label>Apellido paterno</label>
+									<input name="apellido_paterno" type="text" class="form-control" required>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group" data-select2-id="7">
+									<label>Apellido materno</label>
+									<input name="apellido_materno" type="text" class="form-control" required>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+								<div class="form-group" data-select2-id="7">
+									<label>Edad</label>
+									<input name="edad" type="text" class="form-control" required>
+								</div>
+
+							</div>
+						</div>
+						<div class="row" data-select2-id="9">
+							<div class="col-md-4">
+								<div class="form-group">
+								  <label for="defaultSelect">Estado Civil</label>
+									<select class="form-control form-control" id="defaultSelect" name="estado_civil">
+										<option>Seleccione</option>
+										<option value="Soltero/a">Soltero/a</option>
+										<option value="Casado/a">Casado/a</option>
+										<option value="Separado/a">Separado/a</option>
+										<option value="Divorciado/a">Divorciado/a</option>
+										<option value="Viudo/a">Viudo/a</option>
+
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+								  <label for="defaultSelect">Sexo</label>
+									<select class="form-control form-control" id="defaultSelect" name="sexo">
+										<option >Seleccione</option>
+										<option value="Masculino">Masculino</option>
+										<option value="Femenino">Femenino</option>
+										<option value="Otro">Otro</option>
+
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="form-group" data-select2-id="7">
+									<label>Pais</label>
+									<input name="pais" type="text" class="form-control" required>
+								</div>
+
+							</div>
+						</div>
+						<div class="row" data-select2-id="9">
+							<div class="col-md-4" data-select2-id="8">
+								<div class="form-group" data-select2-id="7">
+									<label>Ciudad</label>
+									<input name="ciudad" type="text" class="form-control" required>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group" data-select2-id="7">
+									<label>Celular</label>
+									<input name="celular" type="text" class="form-control" required>
+								</div>
+							</div>
+						</div>
 					</div>
+
 
 					<div class="wizard-action">
 						<div class="pull-left">
@@ -183,11 +256,11 @@
 
 <!-- Eliminar producto -->
 
-<div class="modal fade" id="Eliminarproducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="EliminarDatos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Advertencia</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Advertencia | Datos Personales</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

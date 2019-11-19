@@ -118,18 +118,22 @@
 												<tr>
 													<th>N*</th>
 													<th>Identidad</th>
-													<th>Nombre</th>
-													<th>Apellido</th>
-													<th>Email</th>
-													<th>Usuario</th>
-													<th>Password</th>
-													<th>Condiciones</th>
-													<th>Acciones</th>
+													<th>Primer nombre</th>
+													<th>Segundo nombre</th>
+													<th>Apellido paterno</th>
+													<th>Apellido materno</th>
+													<th>Edad</th>
+													<th>Estado civil</th>
+													<th>Genero</th>
+													<th>Pais</th>
+													<th>Ciudad</th>
+                                                    <th>Telefono</th>
+                                                    <th>Acciones</th>
 												</tr>
 											</thead>
 
 											<tbody>
-                                                <?php include_once('../modelo/consulta.php'); ?>
+                                                <?php include_once('../modelo/consulta_datos.php'); ?>
 											</tbody>
 										</table>
 									</div>

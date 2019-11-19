@@ -110,7 +110,7 @@
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-								   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example">Add IMC</button>
+								   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-indice">Agregar el Indice de Masa Corporal</button>
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
@@ -118,15 +118,18 @@
 											<thead>
 												<tr>
 													<th>N*</th>
-													<th>Código de barra</th>
 													<th>Nombre</th>
-													<th>Descripción</th>
+													<th>Apellido</th>
+													<th>Fecha de atencion</th>
+													<th>Peso</th>
+													<th>Indice de Masa Corporal</th>
+													<th>Ciudad</th>
 													<th>Acciones</th>
 												</tr>
 											</thead>
 
 											<tbody>
-		                                      <?php include_once('../modelo/consulta_producto.php'); ?>
+
 											</tbody>
 										</table>
 									</div>
