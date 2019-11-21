@@ -92,10 +92,39 @@
 							</div>
 						</div>
 						<div class="row" data-select2-id="9">
-							<div class="col-md-4" data-select2-id="8">
-								<div class="form-group" data-select2-id="7">
-									<label>Ciudad</label>
-									<input name="ciudad" type="text" class="form-control" required>
+							<div class="col-md-4">
+								<div class="form-group">
+								  <label for="defaultSelect">Ciudad</label>
+									<select class="form-control form-control" id="defaultSelect" name="ciudad">
+										<option>Seleccione</option>
+										<option value="Cuenca">Cuenca</option>
+										<option value="Guaranda">Guaranda</option>
+										<option value="Azogues">Azogues</option>
+										<option value="Tulcán">Tulcán</option>
+										<option value="Riobamba">Riobamba</option>
+										<option value="Latacunga">Latacunga</option>
+										<option value="Machala">Machala</option>
+										<option value="Esmeraldas">Esmeraldas</option>
+										<option value="Puerto Baquerizo Moreno">Puerto Baquerizo Moreno</option>
+										<option value="Guayaquil">Guayaquil</option>
+										<option value="Ibarra">Ibarra</option>
+										<option value="Loja">Loja</option>
+										<option value="Babahoyo">Babahoyo</option>
+										<option value="Portoviejo">Portoviejo</option>
+										<option value="Macas">Macas</option>
+										<option value="Tena">Tena</option>
+										<option value="Puerto Francisco de Orellana">Puerto Francisco de Orellana</option>
+										<option value="Puyo">Puyo</option>
+										<option value="Quito">Quito</option>
+										<option value="Santa Elena">Santa Elena</option>
+										<option value="Santo Domingo de los Colorados">Santo Domingo de los Colorados</option>
+										<option value="Nueva Loja">Nueva Loja</option>
+										<option value="Ambato">Ambato</option>
+										<option value="Zamora">Zamora</option>
+
+
+
+									</select>
 								</div>
 							</div>
 							<div class="col-md-4">
