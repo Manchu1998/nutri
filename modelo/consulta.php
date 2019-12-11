@@ -16,7 +16,6 @@
             <td>".$fila['email_usua']."</td>
             <td>".$fila['carrera_usua']."</td>
             <td>".$fila['usuario_usua']."</td>
-            <td>".$fila['password_usua']."</td>
             <td>".$fila['agree']."</td>
             <td><button type='button' data-toggle='modal' data-target='#modal' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
                     </button></td>

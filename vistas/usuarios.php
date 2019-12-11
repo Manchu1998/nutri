@@ -21,7 +21,7 @@
 		<div class="main-header" data-background-color="purple">
 			<div class="logo-header">
 				<a href="inicio.php" class="logo">
-					<img src="../assets/img/Logotipo.png" alt="navbar brand" class="navbar-brand" width="70px">
+					<img src="../assets/img/download.png" alt="navbar brand" class="navbar-brand" width="60px">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -123,7 +123,6 @@
 													<th>Apellido</th>
 													<th>Email</th>
 													<th>Usuario</th>
-													<th>Password</th>
 													<th>Condiciones</th>
 													<th>Acciones</th>
 												</tr>
