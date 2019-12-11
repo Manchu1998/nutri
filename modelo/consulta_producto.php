@@ -15,10 +15,10 @@
             <td>".$fila['nombre_prod']."</td>
             <td>".$fila['descrip_prod']."</td>
 
-            <td><button type='button' data-toggle='modal' data-target='#Editarmodal' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
-                    </button></td>
+            <td><a href='actualizaciones/actualizar_egresado.php?id_prod=".$fila['id_prod']."'><button type='button' data-toggle='modal' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
+              </button></a></td>
             <td><button type='button' data-toggle='modal' data-target='#Eliminarproducto' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
-                    </button></td>
+              </button></td>
           </tr>";
     }
 ?>

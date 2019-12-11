@@ -25,7 +25,7 @@
             <td>".$fila['ciudad_proced']."</td>
             <td>".$fila['celular_cont']."</td>
 
-            <td><button type='button' data-toggle='modal' data-target='#EditarDatos' class='btn btn-icon btn-round btn-success'><i class='fa fa-check'></i>
+            <td><a href=''><button type='button' data-toggle='modal' data-target='#EliminarDatos' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
                     </button></td>
             <td><button type='button' data-toggle='modal' data-target='#EliminarDatos' class='btn btn-icon btn-round btn-danger'><i class='fa fa-times'></i>
                     </button></td>

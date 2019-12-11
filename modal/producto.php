@@ -1,5 +1,4 @@
 <!-- Registrar producto -->
-
 <div class="modal fade bd-imc" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -52,19 +51,7 @@
   </div>
 </div>
 
-<!-- Editar producto -->
 
-<div class="modal fade bd-example" id="Editarmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-       <div class="modal-content">
-	      <div class="container">
-	      	<?php include_once('../modelo/actualizar_producto.php'); ?>
-	      </div>
-	    </div>
-    </div>
-  </div>
-</div>
 
 <!-- Eliminar producto -->
 
